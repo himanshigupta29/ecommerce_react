@@ -28,6 +28,39 @@
   color: #61dafb;
 }
 
+.card {
+  background-color:  #f2f2f2;
+}
+
+.card .card-image {
+  height: 300px;
+}
+
+.card .card-image img {
+  max-height: 300px;
+}
+
+
+.card .card-image .card-title {
+  font-size: 1em;
+  padding: 5px;
+  color: #000;
+  background-color: #fff;
+  left: 5px;
+  bottom: 10px;
+  border: 1px solid #ccc;
+
+}
+
+.logo {
+
+  margin-top: 10px;
+}
+
+nav {
+  background-color: #705370;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

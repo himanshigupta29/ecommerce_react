@@ -2,12 +2,17 @@ import React from 'react';
 
 import './Navbar.css';
 
+import logo from '../logo.svg'
 
 function Navbar() {
     return (
         <nav>
         <div className="nav-container">
-       
+
+             <img src= {logo} 
+              height="50" width = "50" 
+              className="logo" />
+
             <div>
                 <form>
                     <div className="input-field">
@@ -20,21 +25,17 @@ function Navbar() {
                 </form>
             </div>
         
-          {/* <a href="#" className="">Logo</a> */}
-          <ul id="nav-mobile" className="">
-            {/* <li><a href="sass.html">Login</a></li> */}
-            {/* <li><a href="badges.html">Sign up</a></li> */}
-          </ul>
+          
+
+              
+            {/* <ul id="nav-mobile" className="">
+            <li><a href="sass.html">Login</a></li>
+            <li><a href="badges.html">Sign up</a></li>
+          </ul> */}
+
         </div>
 
-        {/* <div className="nav-content">
-            <ul className="tabs tabs-transparent">
-                <li className="tab"><a className="#test1">Test 1</a></li>
-                <li className="tab"><a className="active" href="#test2">Test 2</a></li>
-                <li className="tab disabled"><a href="#test3">Disabled Tab</a></li>
-                <li className="tab"><a href="#test4">Test 4</a></li>
-            </ul>
-        </div> */}
+ 
 
 
       </nav>

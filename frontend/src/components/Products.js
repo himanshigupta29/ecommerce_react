@@ -34,7 +34,7 @@ function Products({productsData,
 
         if (node) observer.current.observe(node)
 
-    }, [productsData.loading]);
+    }, [productsData.loading, productsData.hasMore]);
 
 
     if(!productsData.products) {
@@ -46,18 +46,14 @@ function Products({productsData,
     return (
         <div>
 
+            <br/><br/>
+
              <div className="row">
 
             {
                 productsData.products.map( (product, index) => {
 
                     if(productsData.products.length === index+1) {
-
-
-                        console.log('......productsData.products.length..................',productsData.products.length);
-                        console.log('........................', index);
-                        console.log('........................');
-                        console.log('........................');
                 
                         return (
                                 <ProductItem ref ={lastProductElement} 

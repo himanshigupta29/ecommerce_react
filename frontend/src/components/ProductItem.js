@@ -9,16 +9,23 @@ const ProductItem = React.forwardRef((props, ref) => {
 
     console.log('imgURL', imgURL);
 
+    const label = (product.label.length > 50) 
+    ? (product.label).substring(0,50)  + '...'
+    : (product.label);
+
     return (
        
         <div className="col s12 m3" ref = {ref}>
             <div className="card">
                 <div className="card-image">
                     <img src= {imgURL} alt = {product.title} />
-                    <span className="card-title">{product.price}</span>
+                    <span className="card-title">Price ₹{product.price}</span>
                 </div>
                 <div className="card-content">
-                    <p>{product.label}</p>
+                    <p>
+                        {label}
+                        
+                    </p>
                 </div>
                 <div className="card-action">
                     {/* <a href="#">Product details</a> */}
